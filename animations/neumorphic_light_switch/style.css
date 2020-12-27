@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    place-items: center;
+    background-color: #f1e5e5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.base{
+    width: 80px;
+    height: 300px;
+    border-radius: 100px;
+    box-shadow: -4px 4px 6px 0px #717171 inset,
+     6px -4px 6px 0px #ffffff inset;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.toggle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px 0px #6d6d6d;
+    background-color: #f1dede;
+    display: grid;
+    place-items: center;
+}
+
+.power-icon{
+    background-image: url('power-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}

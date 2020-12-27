@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>CSS 3D triangle spin</title>
+</head>
+<body>
+        <div class="root">
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+            <div class="block">
+                <div class="side image-side"></div>
+                <div class="side blueish-side"></div>
+                <div class="side yellowish-side"></div>
+            </div>
+        </div>
+
+    <script>
+        let blocks = document.querySelectorAll('.block')
+        blocks.forEach((block,index) => {
+            block.style.animationDuration = `${1+(index+1)*0.5}s`
+        })
+    </script>
+</body>
+</html>
