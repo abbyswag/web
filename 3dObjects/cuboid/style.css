@@ -1,0 +1,22 @@
+body{
+    margin: 0rem;
+    padding: 0rem;
+    background-color: #000000;
+}
+
+.root{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.space{
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotate3d(1,1,1,45deg);
+}
+
+.side{
+    position: absolute;
+}
