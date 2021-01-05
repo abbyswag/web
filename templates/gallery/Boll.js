@@ -54,7 +54,7 @@ class Boll{
 
     arrangeHex(){
         let list = []
-        for(let i=1;i<4;i++){
+        for(let i=1;i<5;i++){
             for(let j=0;j<5;j++){
                 let hex = this.createHexagon('blue')
                 this.drawHex(hex)
@@ -66,6 +66,9 @@ class Boll{
                 }
                 if (i == 3){
                     hex.style.transform = `rotateZ(${36*(2*j+1)}deg) rotateY(108deg) translateZ(210px)`
+                }
+                if (i == 4){
+                    hex.style.transform = `rotateZ(${36*(2*j+1)}deg) rotateY(200deg) translateZ(210px)`
                 }
                 list.push(hex)
             }
@@ -85,76 +88,3 @@ class Boll{
 
 b = new Boll()
 gallery.appendChild(b.render())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// }
-
-// // arrangeHex(n){
-// //     let list = []
-// //     for(let j=-1;j<2;j++){
-// //         for(let i=0;i<n;i++){
-// //             let hex = this.createHexagon(this.getRandomColor())
-// //             hex.style.transform = `rotateZ(${j*60}deg) rotateX(${i*360/n}deg) translateZ(${2.1*this.sideLen}px)`
-// //             list.push(hex)
-// //         }
-// //     }
-// //     return list
-// // }
-
-// arrangeRestHex(){
-//     let list = []
-//     for(let i=0;i<6;i++){
-//         for(let j=1;j<3;j++){
-//             let hex = this.createHexagon(this.getRandomColor())
-//             hex.style.transform = `rotateZ(${i*60}deg) rotateY(${45*(i+0.5)}deg) translateZ(${2.1*this.sideLen}px)`
-//             list.push(hex)
-//         }
-//     }
-//     return list
-// }
-
-// createBoll(){
-//     let boll = document.createElement('div')
-//     boll.className = 'boll'
-//     this.arrangeHex(8).forEach(hex => {
-//         boll.appendChild(hex)
-//     })
-//     this.arrangeRestHex().forEach(hex => {
-//         //boll.appendChild(hex)
-//     })
-//     return boll
-// }
-
-
-// }

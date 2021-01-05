@@ -6,22 +6,19 @@ body{
 .gallery{
     background-color: black;
     height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-}
-
-
-.block{
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateX(20deg) rotateY(20deg);
+    /* width: 100vw; */
 }
 
 .boll{
     position: relative;
+    top: 15rem;
+    left: 45%;
     transform-style: preserve-3d;
-    transform: rotateX(20deg) rotateY(20deg);
+    transform-origin: left;
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .hex{
@@ -34,4 +31,13 @@ body{
     position: absolute;
     width: 161.8px;
     height: 153.9px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate3d(1,1,1,0deg);
+    }
+    100%{
+        transform: rotate3d(1,1,1,360deg);
+    }
 }
