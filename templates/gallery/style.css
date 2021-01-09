@@ -1,43 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    margin: 0rem;
-    padding: 0rem;
+    overflow: hidden;
+    height: 100vh;
+    background: black;
+   
+}
+section{
+    height: 100vh;
+    position: absolute;
+}
+span{
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+    }
+    100%{
+        transform: scale(1) translateY(-500%) rotate(360deg);
+    }
 }
 
 .gallery{
-    background-color: black;
+    background-color: #000000;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    /* width: 100vw; */
+    width: 100vw;
 }
 
-.boll{
+.carousel{
     position: relative;
-    top: 15rem;
-    left: 45%;
     transform-style: preserve-3d;
-    transform-origin: left;
-    animation-name: rotate;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    transform-origin: center;
+    width: 400px;
+    height: 400px;
+    transform: rotateX(-5deg);
 }
 
 .hex{
     position: absolute;
-    width: 173px;
-    height: 200px;
+    width: 352px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.pent{
-    position: absolute;
-    width: 161.8px;
-    height: 153.9px;
-}
-
-@keyframes rotate{
-    0%{
-        transform: rotate3d(1,1,1,0deg);
-    }
-    100%{
-        transform: rotate3d(1,1,1,360deg);
-    }
-}
